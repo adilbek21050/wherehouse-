@@ -130,7 +130,7 @@ export default function App() {
               <span
                 style={{
                   color:
-                    product.stock <= 5 ? "red" : "green",
+                    product.stock <= 3 ? "red" : "green",
                   fontWeight: "bold",
                 }}
               >
