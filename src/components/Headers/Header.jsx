@@ -15,12 +15,16 @@ function Header() {
 
       <nav className="nav">
         <Link to="/">Главная</Link>
-        <Link to="/warehouse">Склад</Link>
+        <Link to="/main">Склад</Link>
         <Link to="/products">Товары</Link>
       </nav>
 
       <div className="user">
-        <span>Администратор</span>
+        <nav className="nav"> 
+          <Link to="/admin">Администратор</Link>
+        </nav>
+
+
         <img
           src="https://i.pravatar.cc/40"
           alt="Профиль"

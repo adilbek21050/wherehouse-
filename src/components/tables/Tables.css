@@ -1,0 +1,115 @@
+﻿.tables-page {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.tables-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.block-form {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.block-form input,
+.block-form label {
+  width: 100%;
+}
+
+.block-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.block-form input[type="number"] {
+  width: 120px;
+}
+
+.box {
+  padding: 16px;
+  border: 2px dashed #4a7cff;
+  border-radius: 18px;
+  background: #f7f9ff;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.2s ease;
+}
+
+
+.block-card {
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  cursor: grab;
+  transition: box-shadow 0.2s ease;
+}
+
+.block-card:active {
+  cursor: grabbing;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.block-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.block-top h2 {
+  margin: 0 0 8px;
+}
+
+.block-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn:hover:not(:disabled) {
+  background: #f4f4f4;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-add {
+  width: fit-content;
+  background: #4a7cff;
+  color: #fff;
+  border-color: #4a7cff;
+}
+
+.btn-delete {
+  background: #ff5a5f;
+  color: #fff;
+  border-color: #ff5a5f;
+}
+
+.empty-message {
+  font-size: 16px;
+  color: #555;
+}
